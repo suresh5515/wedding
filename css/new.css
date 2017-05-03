@@ -1,0 +1,262 @@
+.title_front {
+	font-weight: 800;
+	font-size: 24px;
+	color: #FFFFFF;
+	padding: 0 0 30px 0;
+	margin-top: 40%;
+}
+.title_container {
+	text-align: center;
+	width: 100%;
+}
+.title, .countdown_section, .about_topsign {
+	font-family: 'Clicker Script', cursive;
+}
+.title {
+	font-size: 90px;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 80px;
+}
+.title_date {
+	color: #FFFFFF;
+	font-weight: 800;
+	font-size: 36px;
+	padding: 20px 0 10px 0;
+}
+span.swirl_left {
+	display: inline-block;
+	background: url(../images/swirl_left.png) no-repeat left;
+	padding: 0 0 0 130px;
+}
+span.swirl_right {
+	display: inline-block;
+	background: url(../images/swirl_right.png) no-repeat right;
+	padding: 10px 130px 10px 0px;
+}
+.title_under {
+	font-weight: 800;
+	font-size: 24px;
+	padding: 0;
+	color: #d7d677;
+}
+#married {
+	background-image: url("../images/main_back.jpg")!important;
+	text-align: center;
+	padding: 25px 0 50px 0;
+        height:500px;
+}
+.married_txt h2 {
+	color: #989898;
+	font: 42px/46px 'Clicker Script', cursive;
+}
+.married_txt h2:after {
+	background: url("../images/bullet.png");
+	background-size: cover;
+	display: block;
+	content: "";
+	width: 16px;
+	height: 26px;
+	margin: 18px auto 0;
+}
+.married_txt p {
+	margin: 0;
+	color: #666;
+}
+.married_txt .banner-text {
+	margin: 10px 0 20px 0;
+}
+.banner-text.light {
+	color: #989898;
+	border-top: medium double #989898;
+	border-bottom: medium double #989898;
+}
+.banner-text.light h4 {
+	color: #989898;
+}
+#counting-down {
+	color: #10658c;
+        display:none;
+}
+.simple-countdown {display:none;}
+.married .container {
+	position: relative;
+}
+.groomimg {
+	position: absolute;
+	left: 0;
+	top: 50px;
+}
+.groomimg2 {
+	position: absolute;
+	right: 0;
+	top: 50px;
+}
+.wedding-section {
+	padding: 20px 0 0 0;
+	background: #fff;
+}
+.wedding-section .col-inner {
+	padding: 60px 30px;
+	background: #f5f5f5;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+.wedding-section .subtitle {
+	font-size: 28px;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+.wedding-section .intro {
+	margin-bottom: 30px;
+	color: #786b67;
+}
+.wedding-section .meta-list {
+	font-size: 16px;
+	display: inline-block;
+}
+.center-block {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.list-unstyled {
+	padding-left: 0;
+	list-style: none;
+}
+.wedding-section .meta-list li {
+	margin-bottom: 15px;
+}
+.wedding-section .love-icon {
+	font-size: 32px;
+	width: 55px;
+	display: inline-block;
+	color: #f4af9c;
+	vertical-align: middle;
+}
+.title-deco-left {
+	background: transparent url('../images/rose-left-pink.svg') no-repeat left bottom;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	width: 75px;
+	height: 86px;
+	display: inline-block;
+}
+.title .title-text {
+	display: inline-block;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 40px;
+	font-family: 'Pacifico';
+	color: #333;
+}
+.title-deco-right {
+	background: transparent url('../images/rose-right-pink.svg') no-repeat right bottom;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	width: 75px;
+	height: 86px;
+	display: inline-block;
+}
+.map-container {
+	height: 460px;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	padding: 5px;
+	border: 1px solid #eeeeee;
+	font-family: arial sans-serif;
+	margin-top: 25px;
+}
+.map-container .note {
+	margin-bottom: 5px;
+	font-size: 16px;
+}
+.map-container .map-title {
+	font-size: 24px;
+}
+.gift-section {
+	padding-top: 90px;
+	padding-bottom: 90px;
+}
+.message-container {
+	background: transparent url('../images/frame-pink.png') no-repeat center top;
+	min-height: 620px;
+	position: relative;
+	margin-bottom: 200px;
+}
+.message-inner {
+	max-width: 600px;
+	padding: 30px;
+	padding-top: 150px;
+}
+.message-container .intro {
+	margin-bottom: 30px;
+	color: #786b67;
+	font-size: 24px;
+}
+.message-container .thank-you {
+	font-size: 46px;
+	color: #f4af9c;
+	margin-bottom: 15px;
+}
+.message-container .signature {
+	font-size: 28px;
+	color: #786b67;
+}
+.couple-profile {
+	position: absolute;
+	bottom: -120px;
+	left: 50%;
+	margin-left: -163px;
+	width: 326px;
+	height: 304px;
+	background: transparent url('../images/heart-couple-pink.png') no-repeat center center;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+.fb-commnet {
+	background: #fff url(../images/bg-heart.png) repeat left top;
+	padding: 25px 0;
+}
+._42ef._8u {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
