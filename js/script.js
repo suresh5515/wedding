@@ -233,11 +233,11 @@ $(document).ready(function() {
 	// 07. COUNTDOWN
 	//===================================================================================
 	var theday = new Date();
-	theday = new Date(2017, 6, 4);
-	$('#countdown').countdown({until: '+9d', format: 'DHMS'});
+	theday = new Date(2017, 5, 4);
+	$('#countdown').countdown({until: theday, format: 'DHMS'});
 	$('#countdown').countdown($.countdown.regionalOptions['custom-label']); 
 		 
-	$('#date-countdown').countdown({until: '+9d', format: 'DHMS'});
+	$('#date-countdown').countdown({until: theday, format: 'DHMS'});
 		 
 	// 08. MOBILE MENU
 	//==================================================================================
