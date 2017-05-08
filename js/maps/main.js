@@ -1,8 +1,8 @@
  /* ======= Google Map ======= */
     map = new GMaps({
         div: '#map',
-        lat: 10.9636069, 
-        lng: 78.07571411,
+        lat: 8.899519,//10.9636069, 
+        lng: 77.827547,//78.07571411,
         scrollwheel: false,
         zoom: 10,
     });
