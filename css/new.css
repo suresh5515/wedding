@@ -140,6 +140,7 @@ span.swirl_right {
 	display: inline-block;
 	color: #f4af9c;
 	vertical-align: middle;
+    float:left;
 }
 .title-deco-left {
 	background: transparent url('../images/rose-left-pink.svg') no-repeat left bottom;
