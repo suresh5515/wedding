@@ -3,7 +3,7 @@
 	font-size: 24px;
 	color: #FFFFFF;
 	padding: 0 0 30px 0;
-	margin-top: 40%;
+	margin-top: 20%;
 }
 .title_container {
 	text-align: center;
@@ -38,13 +38,12 @@ span.swirl_right {
 	font-weight: 800;
 	font-size: 24px;
 	padding: 0;
-	color: #d7d677;
+	color: #ff1d85;
 }
 #married {
 	background-image: url("../images/main_back.jpg")!important;
 	text-align: center;
 	padding: 25px 0 50px 0;
-        height:500px;
 }
 .married_txt h2 {
 	color: #989898;
@@ -76,9 +75,9 @@ span.swirl_right {
 }
 #counting-down {
 	color: #10658c;
-        display:none;
+	display:block;
 }
-.simple-countdown {display:none;}
+.simple-countdown {display:block;}
 .married .container {
 	position: relative;
 }
@@ -140,7 +139,7 @@ span.swirl_right {
 	display: inline-block;
 	color: #f4af9c;
 	vertical-align: middle;
-    float:left;
+	float:left;
 }
 .title-deco-left {
 	background: transparent url('../images/rose-left-pink.svg') no-repeat left bottom;
@@ -234,11 +233,86 @@ span.swirl_right {
 	padding: 25px 0;
 }
 ._42ef._8u {
-    display: none;
+	display: none;
 }
 
 
 
+@media only screen and (max-width: 991px) {
+  .groomimg {
+    position: relative;
+    left: 0;
+    top: 0px;
+    width: 40%;
+    float: left;
+
+}
+.groomimg2 {
+	position: relative;
+    left: 0;
+    top: 0px;
+    width: 40%;
+    float: right;
+}
+.groomimg img, .groomimg2 img {
+	width: 100%;
+}
+.ceremony-col {
+	margin-bottom: 15px;
+}
+.wedding-section .col-inner {
+    padding: 30px;
+}
+.message-container .intro {
+    margin-bottom: 12px;
+    font-size: 17px;
+}
+.message-container .thank-you {
+    font-size: 28px;
+}
+.message-container .signature {
+    font-size: 23px;
+    color: #786b67;
+}
+.married_txt .light {
+	width: 95% !important;
+}
+.title-deco-right, .title-deco-left {
+    width: 30px;
+}
+.title .title-text {
+    font-size: 20px;
+}
+span.swirl_right, span.swirl_left {
+	padding: 0;
+	background: none;
+}
+.title_front {
+    font-size: 18px;
+}
+.title {
+    font-size: 80px;
+}
+.title span {
+    font-size: 50px;
+}
+#main-slider .slide-image {
+    background-position: 15% 50%;
+    position: relative;
+
+}
+#main-slider .slide-image:before {
+	    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(240, 57, 77, 0.3);
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+}
 
 
 

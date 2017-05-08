@@ -233,7 +233,7 @@ $(document).ready(function() {
 	// 07. COUNTDOWN
 	//===================================================================================
 	var theday = new Date();
-	theday = new Date(2015, 11, 27);
+	theday = new Date(2017, 6, 4);
 	$('#countdown').countdown({until: '+9d', format: 'DHMS'});
 	$('#countdown').countdown($.countdown.regionalOptions['custom-label']); 
 		 
