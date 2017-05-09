@@ -326,10 +326,11 @@ span.swirl_right, span.swirl_left {
 
 }
 
-
-
-
-
+@media only screen and (max-width: 490px) {
+    .slide-image{
+            background-image: url(../images/slide-image-mobile.jpg) !important;
+    }
+}
 
 
 
