@@ -281,14 +281,7 @@ $(document).ready(function() {
 			$(".photo-item .layer.hover-animation").css("transition","none"); 
 		 }
 	 }
-	 
-	 
-    
-    
-    
-	
-	
-});
+	});
 	 
 	 
 	 
