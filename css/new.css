@@ -314,11 +314,14 @@ span.swirl_right, span.swirl_left {
 }
 
 .title_container {
-   margin-top: 225px; 
+   margin-top: 190px; 
 }
 
 .title_date {
     padding: 0 0 16px 0;
+}
+.heart-divider {
+    margin-top: 5px;
 }
 
 }
