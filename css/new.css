@@ -240,6 +240,9 @@ span.swirl_right {
 .flex-direction-nav{
     display:none;
 }
+.slides .flex-active-slide{
+    z-index:0 !important;
+}
 
 /* =========================================================
         Engaged-Section STYLE 
