@@ -93,7 +93,7 @@ span.swirl_right {
 }
 .wedding-section {
 	padding: 20px 0 0 0;
-	background: #fff;
+	/*background: #fff;*/
 }
 .wedding-section .col-inner {
 	padding: 60px 30px;
@@ -189,6 +189,8 @@ span.swirl_right {
 .gift-section {
 	padding-top: 90px;
 	padding-bottom: 90px;
+    background: url(../images/pattern.jpg) no-repeat center;
+    background-size: cover;
 }
 .message-container {
 	background: transparent url('../images/frame-pink.png') no-repeat center top;
@@ -229,13 +231,59 @@ span.swirl_right {
 	background-size: contain;
 }
 .fb-commnet {
-	background: #fff url(../images/bg-heart.png) repeat left top;
+	/*background: #fff url(../images/bg-heart.png) repeat left top;*/
 	padding: 25px 0;
 }
 ._42ef._8u {
 	display: none;
 }
-
+.flex-direction-nav{
+    display:none;
+}
+/* =========================================================
+        Engaged-Section STYLE 
+============================================================ */
+.engaged-section {
+  position: relative;
+  padding: 70px 0 0;
+  }
+  @media only screen and (max-width: 479px) {
+    .engaged-section {
+      padding: 50px 0 0; } 
+  }
+  .engaged-section img {
+    margin-bottom: 18px; }
+  .engaged-section .small-text {
+    font-family: "Droid Serif", serif;
+    font-size: 18px;
+    color: #333333;
+    display: block; }
+    @media only screen and (max-width: 479px) {
+      .engaged-section .small-text {
+        font-size: 16px; } }
+  .engaged-section h3 {
+    font-weight: 700;
+    margin: 12px 0 16px; }
+    @media only screen and (max-width: 767px) {
+      .engaged-section h3 {
+        margin: 8px 0; } }
+    @media only screen and (max-width: 479px) {
+      .engaged-section h3 {
+        font-size: 18px;
+        line-height: 20px; } }
+  .engaged-section .bold-text {
+    font-family: "Droid Serif", serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #333333;
+    display: block; }
+    @media only screen and (max-width: 479px) {
+      .engaged-section .bold-text {
+        font-size: 16px; } }
+  .engaged-section .caption img {
+    width: 100%;
+    margin-top: 75px;
+    z-index: -1; }
 
 
 @media only screen and (max-width: 991px) {

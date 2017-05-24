@@ -1,9 +1,9 @@
 'use strict';
 
-	
-	
+
+
 $(document).ready(function() {
-		
+
 	// 01. BROWSER AGENT FUNCTION		
 	//==================================================================================
 	
@@ -36,52 +36,52 @@ $(document).ready(function() {
 	// 01.4 Check IE (< IE10)
 	//----------------------------------------------------------------------------------
 	var isIE = function isIE() {
- 		if (window.navigator.userAgent.indexOf("MSIE ") > 0 || !!navigator.userAgent.match(/Trident\/7\./)) {
-   		 	return 1;
-		}
-	}
-	
+     if (window.navigator.userAgent.indexOf("MSIE ") > 0 || !!navigator.userAgent.match(/Trident\/7\./)) {
+         return 1;
+     }
+ }
+
 	// 01.5 Check IE11
 	//----------------------------------------------------------------------------------
 	var isIE11 = function isIE11() {	
- 		if (!!navigator.userAgent.match(/Trident\/7\./)) {
-   		 	return 1;
-		}
-	}
-	
+     if (!!navigator.userAgent.match(/Trident\/7\./)) {
+         return 1;
+     }
+ }
+
 	// 01.6 Check IE11 (Not Windows Phone)
 	///----------------------------------------------------------------------------------
 	var isIE11desktop = function isIE11desktop() {	
- 		if (!!navigator.userAgent.match(/Trident\/7\./) && window.navigator.userAgent.indexOf("Windows Phone") < 0) {
-   		 	return 1;
-		}
-	}
-	
+     if (!!navigator.userAgent.match(/Trident\/7\./) && window.navigator.userAgent.indexOf("Windows Phone") < 0) {
+         return 1;
+     }
+ }
+
 	// 01.7 Check IE10
 	//----------------------------------------------------------------------------------
 	var isIE10 = function isIE10() {
- 		if (window.navigator.userAgent.indexOf("MSIE 10.0") > 0) {
-   		 	return 1;
-		}
-	}
-	
+     if (window.navigator.userAgent.indexOf("MSIE 10.0") > 0) {
+         return 1;
+     }
+ }
+
 	// 01.8 Check IE9
 	//----------------------------------------------------------------------------------
 	var isIE9 = function isIE9() {
- 		if (window.navigator.userAgent.indexOf("MSIE 9.0") > 0) {
-   		 	return 1;
-		}
-	}
-	
+     if (window.navigator.userAgent.indexOf("MSIE 9.0") > 0) {
+         return 1;
+     }
+ }
+
 	// 01.9 Check Safari/Chrome Mac
 	//----------------------------------------------------------------------------------
 	var isSafari = function isSafari() {
-	 	if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Mac') != -1) {
-   		 	return 1;
-		}
-	}
-		
-	
+     if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Mac') != -1) {
+         return 1;
+     }
+ }
+
+
 	// 02. FULLSCREEN CLASS		
 	//==================================================================================
 	var fullscreen = function(){
@@ -91,7 +91,7 @@ $(document).ready(function() {
 	
 	//Execute on load
 	fullscreen();
-		
+
 	//Execute on window resize
 	$(window).resize(function() {	
 		fullscreen();	
@@ -105,7 +105,7 @@ $(document).ready(function() {
 			visibility: 'hidden'
 		});	
 	}
-			
+
 	// 04. PACE PRELOADER
 	//==================================================================================
 	Pace.on('done', function () {
@@ -130,32 +130,32 @@ $(document).ready(function() {
 			
 			// 04.3.1 Top Bar
 			if ($("#nav-bar").hasClass("top-bar")){
-			
-	 			var nav_header_waypoint = $('#nav-header').waypoint(function(direction) {
-  					
-					if (direction === 'down') {
-						if( !device.tablet() && !device.mobile() ) {
-							$("#nav-bar").addClass("stick-it animated fadeInDownBig");
-						}
-						else
-						{
-							$("#nav-bar").addClass("stick-it");
-						}
-					}
-					else {
-						$("#nav-bar").removeClass("stick-it animated fadeInDownBig");
-					}
-				
-				}, {
-  					offset:'-100%'
-				});
-			}
-			
+
+               var nav_header_waypoint = $('#nav-header').waypoint(function(direction) {
+
+                   if (direction === 'down') {
+                      if( !device.tablet() && !device.mobile() ) {
+                         $("#nav-bar").addClass("stick-it animated fadeInDownBig");
+                     }
+                     else
+                     {
+                         $("#nav-bar").addClass("stick-it");
+                     }
+                 }
+                 else {
+                  $("#nav-bar").removeClass("stick-it animated fadeInDownBig");
+              }
+
+          }, {
+             offset:'-100%'
+         });
+           }
+
 			// 04.3.2 Bottom Bar
 			else if  ($("#nav-bar").hasClass("bottom-bar")){
 				
 				var waypoints = $('#nav-header').waypoint(function(direction) {
-  					
+
 					if (direction === 'down') {
 						if( !device.tablet() && !device.mobile() ) {
 							$("#nav-bar").addClass("stick-it animated fadeInDownBig");
@@ -168,10 +168,10 @@ $(document).ready(function() {
 					else if (direction === 'up') {
 						$("#nav-bar").removeClass("stick-it animated fadeInDownBig");
 					}
-						
+
 				}, {
-  					offset:'-145px'
-				});		
+                 offset:'-145px'
+             });		
 			}
 			
 		}
@@ -188,28 +188,28 @@ $(document).ready(function() {
 			}
 			
 		}, {
-  			offset:'-100%'
-		})
-			
-			
+           offset:'-100%'
+       })
+
+
 		// 04.5 Waypoint Animate CSS
 		//------------------------------------------------------------------------------
 		if( !device.tablet() && !device.mobile() && !isIE9() ) {	
 			$('.animation').each(function(){
-        		var _this = this;
-        		var animation_waypoint = new Waypoint({
-            		element: _this,
-            		handler: function (direction) {
-						$(this.element).css({ visibility: 'visible' });
-						$(this.element).addClass('animated');
-            			},
-            			offset: '90%'
-        			});
-        	});
+              var _this = this;
+              var animation_waypoint = new Waypoint({
+                  element: _this,
+                  handler: function (direction) {
+                      $(this.element).css({ visibility: 'visible' });
+                      $(this.element).addClass('animated');
+                  },
+                  offset: '90%'
+              });
+          });
 			
 		}		
 		
-	
+
 	}); // END of Pace on Hide
 	
 	
@@ -224,21 +224,21 @@ $(document).ready(function() {
 	/*if (device.tablet() || device.mobile() || isIE9() || isIE10() ||isSafari()) {
 		$(".image-divider").addClass("mobile");
 	}*/
-		
+
 	// 06. BIND TOUCH FOR PHOTO ITEM (Mobile / Tablet)
 	//==================================================================================
 	$('.photo-item').bind('touchstart touchend', function(e) {
 	});
-		
+
 	// 07. COUNTDOWN
 	//===================================================================================
 	var theday = new Date();
 	theday = new Date(2017, 5, 4);
 	$('#countdown').countdown({until: theday, format: 'DHMS'});
 	$('#countdown').countdown($.countdown.regionalOptions['custom-label']); 
-		 
+
 	$('#date-countdown').countdown({until: theday, format: 'DHMS'});
-		 
+
 	// 08. MOBILE MENU
 	//==================================================================================
 	$("#mobile-nav").click(function(e){
@@ -248,40 +248,42 @@ $(document).ready(function() {
 	
 	// Hide Menu After Click It. Will be used on onepage version. 
 	$("#nav-menu li a").click(function(){
-		 if ($(this).attr("href") !== "#") {
-			 $("#nav-menu").removeClass("open");
-		 }
-	});
-	 	 
+     if ($(this).attr("href") !== "#") {
+        $("#nav-menu").removeClass("open");
+    }
+});
+
 	
 	
-	 
+
 	// 12. SMOOTH SCROLL
 	//=========================================================================
 	$('a.smooth-scroll').smoothScroll({
 		speed: 1000,
 	});	 
-	 
+
 	$('.nav-smooth-scroll a').smoothScroll({
 		speed: 1000,
 		offset: -80,
 	});	
-	 
+
 	
-	 
+
 	// 14. DISALBE TRANSITION (Mobile / Tablet)
 	//==================================================================================
 	if( device.tablet() || device.mobile() ) {
 		if (!isIE11desktop()){
 			// de-icon
 			$(".de-icon, .de-icon i").css("transition","none");
-		
+
 			// Photo-item		 
 			$(".photo-item img.hover-animation").css("transition","none");
 			$(".photo-item .layer.hover-animation").css("transition","none"); 
-		 }
-	 }
-	});
-	 
-	 
-	 
+     }
+ }
+
+ $.fn.snow({ minSize: 5, maxSize: 50, newOn: 1000, flakeColor: '#a05287' });
+});
+
+
+

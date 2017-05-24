@@ -206,6 +206,7 @@ body{
 	font-family: 'Arvo', serif;	
 	color:#6a6a6a;
 	font-size:15px;
+    background-image: url('../images/bodybg.png');
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -1214,7 +1215,7 @@ img.with-border{
 /* ----------------------------------------------*/
 #content{
 	position:relative;
-	background-color:#f6f6f6;
+	/*background-color:#f6f6f6;*/
 }
 
 /* 07.1.1 Page Without Slider					 */
