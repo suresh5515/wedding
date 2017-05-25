@@ -244,6 +244,15 @@ span.swirl_right {
     z-index:0 !important;
 }
 
+.text-ornament {
+    text-align: center;
+    font-weight: 800;
+    padding: 15px;
+    color: #fff;
+    text-shadow: 0px 1px 9px rgba(102, 98, 98, 0.36);
+    background: url(../images/namebg.png) no-repeat center;
+    background-size: cover;
+
 /* =========================================================
         Engaged-Section STYLE 
 ============================================================ */
